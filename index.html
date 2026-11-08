@@ -258,6 +258,13 @@ svg *{stroke-linecap:round;stroke-linejoin:round}
     '<rect x="122" y="96" width="46" height="22" rx="3" class="sf" transform="rotate(-8 145 107)"/>'+
     '<g class="a-bob"><path d="M165 20 l7 15 16 2 -12 11 3 16 -14 -8 -14 8 3 -16 -12 -11 16 -2z" fill="var(--amber)"/></g>'+
     '<rect x="18" y="16" width="64" height="28" rx="14" fill="var(--deep)"/><text x="50" y="36" class="t" font-size="15" style="fill:#fff">0/13</text>';};
+  S.datalab=function(){return ''+
+    '<path d="M60 150 H264" class="is" stroke-width="3" opacity=".35"/>'+
+    '<path d="M60 40 H264 M60 78 H264 M60 114 H264" class="is" stroke-width="1.5" opacity=".15"/>'+
+    '<rect x="82" y="34" width="40" height="116" rx="7" fill="#EC6A94"/>'+
+    '<rect x="140" y="132" width="40" height="18" rx="6" fill="#62C6F0"/>'+
+    '<rect x="198" y="132" width="40" height="18" rx="6" fill="#F6C94E"/>'+
+    '<text x="102" y="27" class="t" font-size="16">28</text><text x="160" y="125" class="t" font-size="16">4</text><text x="218" y="125" class="t" font-size="16">4</text>';};
   S.rakiura=function(){
     var stars=[[30,30],[70,18],[120,36],[210,22],[290,30],[180,50],[40,64],[300,70],[96,60]],o='',i;
     o+='<path d="M0 76 Q80 20 160 62 T320 44" fill="none" stroke="var(--hue)" stroke-width="16" opacity=".3"/>'+
@@ -299,15 +306,16 @@ svg *{stroke-linecap:round;stroke-linejoin:round}
   /* ---- content ---- */
   var DAILY=[{n:'Maths Fluency',p:'MathsFluency/',m:'fluency'},{n:'Typing',p:'typing/',m:'typing'}];
   var CATS=[
-    {id:'fast-finishers',t:'Fast Finishers',hue:'var(--finish)',items:[
+    {id:'fast-finishers',t:'Maths Fast Finishers',hue:'var(--finish)',items:[
       {n:'Countdown',p:'countdown/',m:'countdown'},{n:'Million Angle',p:'Millionangle/',m:'angle'},
       {n:'Extreme Temperatures',p:'ExtremeTemperatures/',m:'temp'},{n:'Metric Alchemist',p:'MetricAlchemist/',m:'alchemist'},
       {n:'Duck Decimals',p:'DuckDecimals/',m:'duck'},{n:'Million Area',p:'MillionArea/',m:'area'},
       {n:'Algebra Maze',p:'AlgebraMaze/',m:'maze'},{n:'Michael Horror Maths',p:'MichaelHorrorMaths/',m:'horror'},
-      {n:'Metric Conversion',p:'MetricConversion/',m:'metric'},{n:'Decimal Compare',p:'DecimalCompare/',m:'decimal'}]},
-    {id:'maths',t:'Maths',hue:'var(--maths)',items:[
+      {n:'Metric Conversion',p:'MetricConversion/',m:'metric'},{n:'Decimal Compare',p:'DecimalCompare/',m:'decimal'},
+      {n:'Maths Review 3D',p:'MathsReview3D/',m:'review'},{n:'Data Lab',p:'DataLab/',m:'datalab'}]},
+    {id:'maths',t:'Maths Apps',hue:'var(--maths)',items:[
       {n:'Polygon Angles',p:'PolygonAngles/',m:'polygon'},{n:'Dividing Fractions',p:'DividingFractions/',m:'dividing'},
-      {n:'Triangle Area',p:'TriangleArea/',m:'triangle'},{n:'Card Algebra',p:'CardAlgebra/',m:'cards'},{n:'Maths Review 3D',p:'MathsReview3D/',m:'review'},
+      {n:'Triangle Area',p:'TriangleArea/',m:'triangle'},{n:'Card Algebra',p:'CardAlgebra/',m:'cards'},
       {n:'Multiplying Fractions',p:'MultiplyingFractions/',m:'mult'},{n:'Adding and Subtracting Fractions',p:'addingandsubtractingfractions/',m:'addsub'},
       {n:'Mixed Number to Improper Fraction',p:'mixednumbertoimproperfraction/',m:'mixed'}]},
     {id:'inquiry',t:'Inquiry',hue:'var(--inquiry)',items:[
@@ -316,7 +324,7 @@ svg *{stroke-linecap:round;stroke-linejoin:round}
       {n:'Sentence Structure Te Reo',p:'SentenceStructureTeReo/',m:'sentence'},{n:'Māori Syllables',p:'MaoriSyllables/',m:'syllables'}]}
   ];
 
-  var SHOTS={fluency:1,typing:1,countdown:1,angle:1,temp:1,alchemist:1,duck:1,area:1,maze:1,horror:1,metric:1,decimal:1,polygon:1,dividing:1,triangle:1,cards:1,mult:1,addsub:1,mixed:1,rakiura:1,mmp:1,radio:1,bomb:1,sentence:1,syllables:1,review:1};
+  var SHOTS={fluency:1,typing:1,countdown:1,angle:1,temp:1,alchemist:1,duck:1,area:1,maze:1,horror:1,metric:1,decimal:1,polygon:1,dividing:1,triangle:1,cards:1,mult:1,addsub:1,mixed:1,rakiura:1,mmp:1,radio:1,bomb:1,sentence:1,syllables:1,review:1,datalab:1};
   var ARROW='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
   var LEFT='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>';
   var RIGHT='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>';
